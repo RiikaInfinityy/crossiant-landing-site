@@ -1,13 +1,15 @@
 :root {
-  --primary-color: #6c63ff;
+  --primary-color: #ff9494;
   --secondary-color: #f5f2fe;
   --box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   --btn-transition: all 200ms ease-in-out;
+  --bg-color: #fff5e4;
 }
 
 body {
   margin: 60px auto;
+  background-color: var(--bg-color);
 }
 
 h1,
@@ -43,26 +45,12 @@ h3 {
   text-transform: capitalize;
 }
 
-.contact-link:hover,
-.photo-link:hover {
-  background: var(--primary-color);
-  box-shadow: var(--box-shadow);
-  color: white;
-}
-
-.contact-link,
-.photo-link {
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
-  transition: var(--btn-transition);
-}
-
-.homepage-link:hover {
+.custom-link:hover {
   color: var(--primary-color);
   background: var(--secondary-color);
 }
 
-.homepage-link {
+.custom-link {
   margin: 20px;
   border-radius: 4px;
   padding: 20px 15px;
@@ -76,6 +64,7 @@ h3 {
 
 .about-paragraphs {
   margin: 30px auto;
+  text-align: center;
 }
 
 .about-paragraphs p {
@@ -88,8 +77,8 @@ img {
 }
 
 .smallimage {
-  width: 300px;
-  max-width: 300px;
+  width: 350px;
+  max-width: 350px;
 }
 
 .bigImage {
